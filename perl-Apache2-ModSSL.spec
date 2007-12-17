@@ -13,7 +13,6 @@ BuildRequires:	apache-devel
 BuildRequires:	apache-mod_perl
 BuildRequires:	apache-mod_perl-devel
 BuildRequires:	apache-mod_ssl
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Perl interface to mod_ssl
