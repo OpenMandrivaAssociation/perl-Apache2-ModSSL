@@ -22,7 +22,8 @@ Perl interface to mod_ssl
 %setup -q -n %{real_name}-%{version} 
 
 %build
-%{__perl} Makefile.PL INC="-I`%{_sbindir}/apxs -q INCLUDEDIR` `apr-1-config --includes` `apu-1-config --includes`" INSTALLDIRS=vendor
+#%{__perl} Makefile.PL INC="-I`%{_sbindir}/apxs -q INCLUDEDIR` `apr-1-config --includes` `apu-1-config --includes`" INSTALLDIRS=vendor
+%{__perl} Makefile.PL -apxs %{_sbindir}/apxs INSTALLDIRS=vendor
 %make
 
 #export APACHE_TEST_HTTPD="%{_sbindir}/httpd"
