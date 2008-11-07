@@ -2,8 +2,8 @@
 
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
 Name:		perl-%{real_name}
-Version:	0.06
-Release:	%mkrel 2
+Version:	0.07
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
