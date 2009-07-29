@@ -1,25 +1,28 @@
-%define real_name Apache2-ModSSL
+%define upstream_name    Apache2-ModSSL
+%define upstream_version 0.07
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
-Name:		perl-%{real_name}
-Version:	0.07
-Release:	%mkrel 1
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OP/OPI/%{real_name}-%{version}.tar.bz2
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/O/OP/OPI/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
 BuildRequires:	apache-devel
 BuildRequires:	apache-mod_perl
 BuildRequires:	apache-mod_perl-devel
 BuildRequires:	apache-mod_ssl
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl interface to mod_ssl
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 #%{__perl} Makefile.PL INC="-I`%{_sbindir}/apxs -q INCLUDEDIR` `apr-1-config --includes` `apu-1-config --includes`" INSTALLDIRS=vendor
@@ -44,6 +47,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/*/auto/Apache2/ModSSL/ModSSL.so
 %{perl_vendorlib}/*/Apache2/ModSSL.pm
 %{_mandir}/*/*
-
-
-
