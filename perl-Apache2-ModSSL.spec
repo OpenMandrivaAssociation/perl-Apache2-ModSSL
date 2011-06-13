@@ -1,9 +1,9 @@
 %define upstream_name    Apache2-ModSSL
-%define upstream_version 0.07
+%define upstream_version 0.08
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
 License:	GPL+ or Artistic
