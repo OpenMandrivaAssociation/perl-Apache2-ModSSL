@@ -1,2 +1,4 @@
+removed_sources:
+  Apache2-ModSSL-0.08.tar.bz2: 8ec7129d6fd1adc69af5bcf35f23dc027d518a1c
 sources:
-  "Apache2-ModSSL-0.08.tar.bz2": 8ec7129d6fd1adc69af5bcf35f23dc027d518a1c
+  Apache2-ModSSL-0.10.tar.gz: a72ee7c93fe2f44053f552a647db7101187d400d

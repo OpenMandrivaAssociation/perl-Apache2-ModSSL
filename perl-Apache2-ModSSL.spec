@@ -1,15 +1,15 @@
 %define upstream_name    Apache2-ModSSL
-%define upstream_version 0.08
+%define upstream_version 0.10
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:	3
+Version:    %perl_convert_version 0.10
+Release:	1
 
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OP/OPI/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/authors/id/O/OP/OPI/Apache2-ModSSL-0.10.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	apache-devel
@@ -100,4 +100,5 @@ Perl interface to mod_ssl
 
 * Sat Jul 16 2005 Oden Eriksson <oeriksson@mandriva.com> 0.03-1mdk
 - initial Mandriva package
+
 
