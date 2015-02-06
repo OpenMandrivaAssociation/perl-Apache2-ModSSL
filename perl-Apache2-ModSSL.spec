@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.10
-Release:	2
+Release:	3
 
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
 License:	GPL+ or Artistic
