@@ -8,7 +8,7 @@ Release:	3
 Summary:	Apache2::ModSSL - a Perl Interface to mod_ssl functions
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}
+URL:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/O/OP/OPI/Apache2-ModSSL-0.10.tar.gz
 
 BuildRequires:	perl-devel
